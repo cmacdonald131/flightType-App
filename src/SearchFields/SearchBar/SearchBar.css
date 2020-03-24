@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.search {
+    margin-top: 40px;
+}
+
+label {
+    margin-bottom: 5px;
+}

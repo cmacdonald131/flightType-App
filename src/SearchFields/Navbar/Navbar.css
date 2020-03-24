@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.Navbar {
+  background-color: #001f2b;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.Navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  font-family: "Graduate-Regular";
+}
+
+.active {
+  margin-left: 10px;
+}
+
+.Navbar a:hover {
+  background-color: lightgray;
+  color: #ffffff;
+}
+
+.Navbar #myLinks {
+  float: right;
+}

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.images {
+  width: 80%;
+  height: 200px;
+}
+
+.LandingSection {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.Card {
+  text-align: center;
+  margin: 10px 10px;
+  display: inline-block;
+  font-size: 18px;
+  align-content: center;
+}
+
+@media screen and (min-width: 700px) {
+  .images {
+    width: 50%;
+  }
+}

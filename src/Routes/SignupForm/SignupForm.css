@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.SignupForm {
+  text-align: center;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-left: 10%;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+
+input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-size: 16px;
+}
