@@ -58,6 +58,19 @@ export default class SignupForm extends Component {
                         <h1>Sign up to get started!</h1>
                     </header>
                     <div className='formSection'>
+                        <label htmlFor='SignupForm__uname' style={{ textAlign: "left" }}>
+                            Name
+                        </label>
+                        <input
+                            name='name'
+                            type='text'
+                            placeholder='Enter your Name'
+                            required
+                            id='SignupForm__name'
+                        >
+                        </input>
+                    </div>
+                    <div className='formSection'>
                         <label htmlFor='SignupForm__username' style={{ textAlign: "left" }}>
                             Username
                         </label>

@@ -9,7 +9,7 @@ export default class SearchResults extends Component {
             <div>
                 
                 <section className="searchResults">
-                    
+                    <h1>Search Results</h1>
                 </section>
 
             </div>

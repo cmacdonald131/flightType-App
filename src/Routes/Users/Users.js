@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import ApiContext from '../../ApiContext'
+import SearchResults from '../../Components/SearchResults/SearchResults';
 
 
 class Users extends Component {
     static contextType = ApiContext;
     componentDidMount() {
-        this.context.getTeams()
+        this.context.getFlights()
     }
 
     render() {
@@ -17,6 +18,7 @@ class Users extends Component {
                     <header role="banner">
                         <h1>Your Home Page</h1>
                     </header>
+                    <SearchResults />
                     <button
                         className='create_flight'
                         type='button'
