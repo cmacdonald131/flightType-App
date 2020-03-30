@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from '../../SearchFields/Navbar/Navbar'
+import Navbar from '../../Components/Navbar/Navbar'
 import AuthApiService from '../../Services/auth-api-service'
 import './SignupForm.css'
 
@@ -52,6 +52,7 @@ export default class SignupForm extends Component {
                 <Navbar />
                 <form
                     className='SignupForm'
+                    onSubmit={this.handleSubmit}
                 >
                     <header>
                         <h1>Sign up to get started!</h1>

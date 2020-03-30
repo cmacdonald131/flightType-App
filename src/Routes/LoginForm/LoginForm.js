@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from '../../SearchFields/Navbar/Navbar'
+import Navbar from '../../Components/Navbar/Navbar'
 import AuthApiService from '../../Services/auth-api-service'
 import ApiContext from '../../ApiContext'
 import './LoginForm.css'
@@ -13,7 +13,7 @@ export default class LoginForm extends Component {
 
     state = { error: null }
     onLoginSuccess = () => {
-        this.props.history.push('/team-page')
+        this.props.history.push('/user')
     }
 
     //On clicking the Login button when entering correct login information a call is sent to post an authorized login to the server through a JWT 
@@ -40,9 +40,10 @@ export default class LoginForm extends Component {
     render() {
         return (
             <div className="LoginForm_head">
-
-                <form className='LoginForm'>
-
+                <form
+                    className='LoginForm'
+                    onSubmit={this.handleSubmitJwtAuth}
+                >
                     <Navbar />
                     <header>
                         <h1 style={{ textAlign: "center" }}>Login to your account</h1>

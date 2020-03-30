@@ -3,11 +3,13 @@ import { Route, Switch } from 'react-router-dom'
 import Landing from '../src/Routes/Landing/Landing'
 import LoginForm from '../src/Routes/LoginForm/LoginForm'
 import SignupForm from './Routes/SignupForm/SignupForm'
-import SearchSection from '../src/SearchFields/SearchSection/SearchSection'
 import TokenService from './Services/token-service'
 import IdleService from './Services/idle-service'
 import AuthApiService from './Services/auth-api-service'
 import ApiContext from './ApiContext'
+import Users from './Routes/Users/Users'
+import SearchResults from './Components/SearchResults/SearchResults'
+import FlightForm from './Components/FlightForm/FlightForm'
 
 
 
@@ -61,10 +63,13 @@ class App extends Component {
       }}>
         <div className="flightType">
           <Switch>
-            <Route exact path="/" component={SearchSection} />
-            <Route path="/about" component={Landing} />
+            <Route exact path="/" component={Landing} />
             <Route path="/login" component={LoginForm} />
             <Route path="/signup" component={SignupForm} />
+            <Route path="/user" component={Users} />
+            <Route path="/flights" component={SearchResults} />
+            <Route path="/createflight" component={FlightForm} />
+            <Route path="/flight/:flight_id" component={SearchResults} />
           </Switch>
         </div>
       </ApiContext.Provider>
