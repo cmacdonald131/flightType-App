@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import config from './config'
 import Landing from '../src/Routes/Landing/Landing'
 import LoginForm from '../src/Routes/LoginForm/LoginForm'
 import SignupForm from './Routes/SignupForm/SignupForm'
@@ -54,12 +55,46 @@ class App extends Component {
     this.forceUpdate()
   }
 
+  getFlights = () => {
+    fetch(`${config.API_ENDPOINT}/flights`, {
+      headers: {
+        'Authorization': `Bearer ${TokenService.getAuthToken()}`,
+        'content-type': 'application/json'
+      }
+    })
+
+      .then(flights => {
+        return flights.json()
+      }).then(data => {
+        this.setState({
+          flights: data
+        })
+      })
+  }
+
+  deleteFlight = (id) => {
+    fetch(`${config.API_ENDPOINT}/flights/${id}`, {
+      method: "Delete",
+      headers: {
+        'Authorization': `Bearer ${TokenService.getAuthToken()}`,
+        'content-type': 'application/json'
+      }
+    })
+    .then(data => {
+      this.setState({
+        flights: this.state.flights.filter(flight => flight.id !== id)
+      })
+    })
+  }
+
 
   render() {
     return (
       <ApiContext.Provider value={{
         user: this.state.user,
         setUser: this.setUser,
+        getFlights: this.getFlights,
+        deleteFlight: this.deleteFlight,
       }}>
         <div className="flightType">
           <Switch>

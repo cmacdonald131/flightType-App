@@ -1,7 +1,9 @@
 import React from 'react'
 
 export default React.createContext({
+  flights: [],
   user: null,
-  setUser: () => {},
   getFlights: () => {},
+  deleteFlight: () => {},
+  setUser: () => {},
 })
