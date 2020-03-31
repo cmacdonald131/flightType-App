@@ -9,13 +9,14 @@ import IdleService from './Services/idle-service'
 import AuthApiService from './Services/auth-api-service'
 import ApiContext from './ApiContext'
 import Users from './Routes/Users/Users'
-import SearchResults from './Components/SearchResults/SearchResults'
 import FlightForm from './Components/FlightForm/FlightForm'
+import FlightDetails from './Components/FlightDetails/FlightDetails'
 
 
 
 class App extends Component {
   state = {
+    flights: [],
     hasError: false,
     user: TokenService.getAuthToken(),
   }
@@ -91,6 +92,7 @@ class App extends Component {
   render() {
     return (
       <ApiContext.Provider value={{
+        flights: this.state.flights,
         user: this.state.user,
         setUser: this.setUser,
         getFlights: this.getFlights,
@@ -102,9 +104,8 @@ class App extends Component {
             <Route path="/login" component={LoginForm} />
             <Route path="/signup" component={SignupForm} />
             <Route path="/user" component={Users} />
-            <Route path="/flights" component={SearchResults} />
+            <Route path="/flights" component={FlightDetails} />
             <Route path="/createflight" component={FlightForm} />
-            <Route path="/flight/:flight_id" component={SearchResults} />
           </Switch>
         </div>
       </ApiContext.Provider>

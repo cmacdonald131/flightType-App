@@ -57,6 +57,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Flight Name</label>
                         <input
                             className='search-box'
+                            name='name'
                             type='text'
                             placeholder='Input flight name'
                             required
@@ -66,6 +67,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Departure Airport</label>
                         <input
                             className='search-box'
+                            name='departure_airport'
                             type='text'
                             placeholder='Input departure airport'
                             required
@@ -75,6 +77,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Arrival Airport</label>
                         <input
                             className='search-box'
+                            name='arrival_airport'
                             type='text'
                             placeholder='Input arrival airport'
                             required
@@ -84,6 +87,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Airline</label>
                         <input
                             className='search-box'
+                            name='company'
                             type='text'
                             placeholder='Input airline company'
                             required
@@ -93,6 +97,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Arrival Time</label>
                         <input
                             className='search-box'
+                            name='arrival_time'
                             type='time'
                             placeholder='Input arrival time'
                             required
@@ -102,6 +107,7 @@ export default class FlightForm extends Component {
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Departure Time</label>
                         <input
                             className='search-box'
+                            name='departure_time'
                             type='time'
                             placeholder='Input departure time'
                             required

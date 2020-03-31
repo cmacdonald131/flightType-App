@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import ApiContext from '../../ApiContext'
-import SearchResults from '../../Components/SearchResults/SearchResults';
+import FlightDisplay from '../../Components/FlightDisplay/FlightDisplay';
 
 
 class Users extends Component {
@@ -18,7 +18,7 @@ class Users extends Component {
                     <header role="banner">
                         <h1>Your Home Page</h1>
                     </header>
-                    <SearchResults />
+                    <FlightDisplay />
                     <button
                         className='create_flight'
                         type='button'

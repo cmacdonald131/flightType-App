@@ -21,7 +21,7 @@ class Navbar extends Component {
         if (this.context.user) {
             menus = (
                 <div id="myLinks">
-                    <Link to="/users" className="navLink">Home Page</Link>
+                    <Link to="/user" className="navLink">Home Page</Link>
                     <Link to='/' onClick={this.logout} className="navLink">Logout</Link>
                 </div>
             )
