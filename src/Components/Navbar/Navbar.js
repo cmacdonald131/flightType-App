@@ -13,7 +13,7 @@ class Navbar extends Component {
         this.context.setUser(null)
         TokenService.clearAuthToken()
     }
-
+    
     //when successfully logged in the navbar will display a link for the team page and log out.  When logged out it will show links for login and register
 
     render() {
@@ -21,7 +21,7 @@ class Navbar extends Component {
         if (this.context.user) {
             menus = (
                 <div id="myLinks">
-                    <Link to="/user" className="navLink">Home Page</Link>
+                    <Link to="/user" className="navLink">Home</Link>
                     <Link to='/' onClick={this.logout} className="navLink">Logout</Link>
                 </div>
             )
@@ -31,7 +31,7 @@ class Navbar extends Component {
             menus = (
                 <div id="myLinks">
                     <Link to="/login" className="navLink">Login</Link>
-                    <Link to="/signup" className="navLink">Register</Link>
+                    <Link to="/signup" className="navLink">Signup</Link>
                 </div>
             )
         }
@@ -39,7 +39,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <nav className="nav">
-                    <a href="/" className="active">FlightType</a>
+                    <a href="/" className="active">FT</a>
                     {menus}
                 </nav>
             </div>

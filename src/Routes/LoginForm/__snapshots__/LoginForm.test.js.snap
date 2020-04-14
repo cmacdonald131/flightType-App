@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders a form.LoginForm by default 1`] = `
+<div
+  className="LoginForm_head"
+>
+  <form
+    className="LoginForm"
+    onSubmit={[Function]}
+  >
+    <Navbar />
+    <header>
+      <h1
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Login to your account
+      </h1>
+    </header>
+    <section
+      className="Login_section"
+    >
+      <div
+        className="username"
+        style={
+          Object {
+            "marginBottom": "10px",
+          }
+        }
+      >
+        <label
+          className="label"
+          htmlFor="LoginForm__username"
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        >
+          Username
+        </label>
+        <input
+          id="LoginForm__username"
+          name="username"
+          placeholder="Enter Username"
+          required={true}
+        />
+      </div>
+      <div
+        className="password"
+        style={
+          Object {
+            "marginBottom": "10px",
+          }
+        }
+      >
+        <label
+          className="label"
+          htmlFor="LoginForm__password"
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        >
+          Password
+        </label>
+        <input
+          id="LoginForm__password"
+          name="password"
+          placeholder="Enter Password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="submit"
+        type="submit"
+      >
+        Login
+      </button>
+    </section>
+  </form>
+</div>
+`;
+
+exports[`LoginForm component renders the LoginForm given props 1`] = `
+<div
+  className="LoginForm_head"
+>
+  <form
+    className="LoginForm"
+    onSubmit={[Function]}
+  >
+    <Navbar />
+    <header>
+      <h1
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Login to your account
+      </h1>
+    </header>
+    <section
+      className="Login_section"
+    >
+      <div
+        className="username"
+        style={
+          Object {
+            "marginBottom": "10px",
+          }
+        }
+      >
+        <label
+          className="label"
+          htmlFor="LoginForm__username"
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        >
+          Username
+        </label>
+        <input
+          id="LoginForm__username"
+          name="username"
+          placeholder="Enter Username"
+          required={true}
+        />
+      </div>
+      <div
+        className="password"
+        style={
+          Object {
+            "marginBottom": "10px",
+          }
+        }
+      >
+        <label
+          className="label"
+          htmlFor="LoginForm__password"
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        >
+          Password
+        </label>
+        <input
+          id="LoginForm__password"
+          name="password"
+          placeholder="Enter Password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="submit"
+        type="submit"
+      >
+        Login
+      </button>
+    </section>
+  </form>
+</div>
+`;

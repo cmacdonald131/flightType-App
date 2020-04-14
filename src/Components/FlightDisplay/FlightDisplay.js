@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ApiContext from '../../ApiContext'
 import { Link } from 'react-router-dom'
+import './FlightDisplay.css'
 
 
 export default class FlightDisplay extends Component {
@@ -12,14 +13,16 @@ export default class FlightDisplay extends Component {
                 <section className="searchResults">
                     <h1>Your Flights</h1>
                     {this.context.flights.map(flights => (
-                        <li>{flights.name}
-                            <Link to='/flights'>Flight Details</Link>
-                            <button
-                                className='flight__delete'
-                                type='button'
-                                onClick={e => this.context.deleteFlight(flights.id)}
-                            >Delete Flight
-                            </button></li>
+                        <ul key={flights.id}>
+                            <li>
+                                <p style={{textAlign: "center"}}>{flights.name}</p>
+                                <Link to={'/flight/' + flights.id}>
+                                    <button type='button' style={{textAlign: "center"}}>
+                                        Flight Details
+                                </button>
+                                </Link>
+                            </li>
+                        </ul>
                     ))}
                 </section>
 

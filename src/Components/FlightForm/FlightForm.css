@@ -1,8 +1,41 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .aircraft {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.AddFlight {
+  background: url(../../Images/wing.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+}
+
+button {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .AddFlight {
+    background: url(../../Images/flight.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+  }
+
+  button {
+      margin-right: 20px;
+  }
+
+  .aircraft {
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+  }
 }

@@ -9,27 +9,28 @@ export default class FlightDetails extends Component {
 
 
     render() {
+        const flight = this.context.flights.find(f => f.id === parseInt(this.props.match.params.id)) || {}
+
         return (
-            <div>
+            <div className="flightDetails">
                 <Navbar />
                 <section className="searchResults">
                     <h1>Your Flights</h1>
-                    {this.context.flights.map(flights => (
-                        <ul>
-                        <li>{flights.name}</li>
-                        <li>{flights.company}</li>
-                        <li>{flights.departure_time}</li>
-                        <li>{flights.arrival_time}</li>
-                        <li>{flights.departure_airport}</li>
-                        <li>{flights.arrival_airport}</li>
+
+                    <ul>
+                        <li>Flight Name: {flight.name}</li>
+                        <li>Airline: {flight.company}</li>
+                        <li>Departure Airport: {flight.departure_airport}</li>
+                        <li>Departure Time: {flight.departure_time}</li>
+                        <li>Arrival Airport: {flight.arrival_airport}</li>
+                        <li>Arrival Time: {flight.arrival_time}</li>
                         <button
                             className='flight__delete'
                             type='button'
-                            onClick={e => this.context.deleteFlight(flights.id)}
+                            onClick={e => this.context.deleteFlight(flight.id).then(data => this.props.history.push('/user'))}
                         >Delete Flight
                         </button>
-                        </ul>
-                    ))}
+                    </ul>
                 </section>
 
             </div>

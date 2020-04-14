@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import ApiContext from '../../ApiContext'
-import FlightDisplay from '../../Components/FlightDisplay/FlightDisplay';
+import FlightDisplay from '../../Components/FlightDisplay/FlightDisplay'
+import './Users.css'
 
 
 class Users extends Component {

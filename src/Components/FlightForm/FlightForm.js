@@ -6,6 +6,7 @@ import './FlightForm.css'
 import Navbar from '../Navbar/Navbar'
 
 export default class FlightForm extends Component {
+    //creates new flight from information input and posts it to flights endpoint
     onSubmit = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -53,7 +54,7 @@ export default class FlightForm extends Component {
                 <Navbar />
                 <form onSubmit={this.onSubmit} className="add-flight">
                     <section className="aircraft">
-                        <h1 style={{ textAlign: "center" }}>Create your flight</h1>
+                        <h1 style={{ textAlign: "center", fontSize: "30px" }}>Create your flight</h1>
                         <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Flight Name</label>
                         <input
                             className='search-box'
@@ -114,7 +115,7 @@ export default class FlightForm extends Component {
                             id='FlightForm'
                         >
                         </input>
-                        <button style={{ marginLeft: "10%" }}>Create Flight</button>
+                        <button >Create Flight</button>
                         <button type="reset" className="reset">Reset</button>
                         <button onClick={this.onCancel} type="cancel" className="cancel">Cancel</button>
                     </section>

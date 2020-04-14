@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupForm component renders a form.SignupForm by default 1`] = `
+<div
+  className="wrapper"
+>
+  <Navbar />
+  <form
+    className="SignupForm"
+    onSubmit={[Function]}
+  >
+    <header>
+      <h1>
+        Sign up to get started!
+      </h1>
+    </header>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__uname"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Name
+      </label>
+      <input
+        id="SignupForm__name"
+        name="name"
+        placeholder="Enter your Name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__username"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Username
+      </label>
+      <input
+        id="SignupForm__username"
+        name="username"
+        placeholder="Enter your Username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__password"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Password
+      </label>
+      <input
+        id="SignupForm__password"
+        name="password"
+        onClick={[Function]}
+        placeholder="Enter your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__confirmPassword"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Confirm Password
+      </label>
+      <input
+        id="SignupForm__confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__email"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Email
+      </label>
+      <input
+        id="SignupForm__email"
+        name="email"
+        placeholder="Enter your email"
+        required={true}
+        type="text"
+      />
+    </div>
+    <button
+      className="btn"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+      type="submit"
+    >
+      Register
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SignupForm component renders the SignupForm given props 1`] = `
+<div
+  className="wrapper"
+>
+  <Navbar />
+  <form
+    className="SignupForm"
+    onSubmit={[Function]}
+  >
+    <header>
+      <h1>
+        Sign up to get started!
+      </h1>
+    </header>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__uname"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Name
+      </label>
+      <input
+        id="SignupForm__name"
+        name="name"
+        placeholder="Enter your Name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__username"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Username
+      </label>
+      <input
+        id="SignupForm__username"
+        name="username"
+        placeholder="Enter your Username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__password"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Password
+      </label>
+      <input
+        id="SignupForm__password"
+        name="password"
+        onClick={[Function]}
+        placeholder="Enter your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__confirmPassword"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Confirm Password
+      </label>
+      <input
+        id="SignupForm__confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="formSection"
+    >
+      <label
+        htmlFor="SignupForm__email"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Email
+      </label>
+      <input
+        id="SignupForm__email"
+        name="email"
+        placeholder="Enter your email"
+        required={true}
+        type="text"
+      />
+    </div>
+    <button
+      className="btn"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+      type="submit"
+    >
+      Register
+    </button>
+  </form>
+</div>
+`;

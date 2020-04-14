@@ -12,6 +12,8 @@ import Users from './Routes/Users/Users'
 import FlightForm from './Components/FlightForm/FlightForm'
 import FlightDetails from './Components/FlightDetails/FlightDetails'
 
+import './App.css'
+
 
 
 class App extends Component {
@@ -74,7 +76,7 @@ class App extends Component {
   }
 
   deleteFlight = (id) => {
-    fetch(`${config.API_ENDPOINT}/flights/${id}`, {
+    return fetch(`${config.API_ENDPOINT}/flights/${id}`, {
       method: "Delete",
       headers: {
         'Authorization': `Bearer ${TokenService.getAuthToken()}`,
@@ -98,13 +100,13 @@ class App extends Component {
         getFlights: this.getFlights,
         deleteFlight: this.deleteFlight,
       }}>
-        <div className="flightType">
+        <div className="flightType" style={{backgroundColor: "white"}}>
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route path="/login" component={LoginForm} />
             <Route path="/signup" component={SignupForm} />
             <Route path="/user" component={Users} />
-            <Route path="/flights" component={FlightDetails} />
+            <Route path="/flight/:id" component={FlightDetails} />
             <Route path="/createflight" component={FlightForm} />
           </Switch>
         </div>

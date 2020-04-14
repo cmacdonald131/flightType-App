@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlightForm component renders a form.FlightForm by default 1`] = `
+<div
+  className="AddFlight"
+>
+  <Navbar />
+  <form
+    className="add-flight"
+    onSubmit={[Function]}
+  >
+    <section
+      className="aircraft"
+    >
+      <h1
+        style={
+          Object {
+            "fontSize": "30px",
+            "textAlign": "center",
+          }
+        }
+      >
+        Create your flight
+      </h1>
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Flight Name
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="name"
+        placeholder="Input flight name"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Departure Airport
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="departure_airport"
+        placeholder="Input departure airport"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Arrival Airport
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="arrival_airport"
+        placeholder="Input arrival airport"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Airline
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="company"
+        placeholder="Input airline company"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Arrival Time
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="arrival_time"
+        placeholder="Input arrival time"
+        required={true}
+        type="time"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Departure Time
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="departure_time"
+        placeholder="Input departure time"
+        required={true}
+        type="time"
+      />
+      <button>
+        Create Flight
+      </button>
+      <button
+        className="reset"
+        type="reset"
+      >
+        Reset
+      </button>
+      <button
+        className="cancel"
+        onClick={[Function]}
+        type="cancel"
+      >
+        Cancel
+      </button>
+    </section>
+  </form>
+</div>
+`;
+
+exports[`FlightForm component renders the FlightForm given props 1`] = `
+<div
+  className="AddFlight"
+>
+  <Navbar />
+  <form
+    className="add-flight"
+    onSubmit={[Function]}
+  >
+    <section
+      className="aircraft"
+    >
+      <h1
+        style={
+          Object {
+            "fontSize": "30px",
+            "textAlign": "center",
+          }
+        }
+      >
+        Create your flight
+      </h1>
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Flight Name
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="name"
+        placeholder="Input flight name"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Departure Airport
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="departure_airport"
+        placeholder="Input departure airport"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Arrival Airport
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="arrival_airport"
+        placeholder="Input arrival airport"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Airline
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="company"
+        placeholder="Input airline company"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Arrival Time
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="arrival_time"
+        placeholder="Input arrival time"
+        required={true}
+        type="time"
+      />
+      <label
+        htmlFor="FlightForm"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
+      >
+        Departure Time
+      </label>
+      <input
+        className="search-box"
+        id="FlightForm"
+        name="departure_time"
+        placeholder="Input departure time"
+        required={true}
+        type="time"
+      />
+      <button>
+        Create Flight
+      </button>
+      <button
+        className="reset"
+        type="reset"
+      >
+        Reset
+      </button>
+      <button
+        className="cancel"
+        onClick={[Function]}
+        type="cancel"
+      >
+        Cancel
+      </button>
+    </section>
+  </form>
+</div>
+`;
