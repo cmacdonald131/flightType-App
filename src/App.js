@@ -11,6 +11,8 @@ import ApiContext from './ApiContext'
 import Users from './Routes/Users/Users'
 import FlightForm from './Components/FlightForm/FlightForm'
 import FlightDetails from './Components/FlightDetails/FlightDetails'
+import PublicOnlyRoute from './Utils/PublicOnlyRoute'
+import PrivateRoute from './Utils/PrivateRoute'
 
 import './App.css'
 
@@ -83,11 +85,11 @@ class App extends Component {
         'content-type': 'application/json'
       }
     })
-    .then(data => {
-      this.setState({
-        flights: this.state.flights.filter(flight => flight.id !== id)
+      .then(data => {
+        this.setState({
+          flights: this.state.flights.filter(flight => flight.id !== id)
+        })
       })
-    })
   }
 
 
@@ -100,14 +102,34 @@ class App extends Component {
         getFlights: this.getFlights,
         deleteFlight: this.deleteFlight,
       }}>
-        <div className="flightType" style={{backgroundColor: "white"}}>
+        <div className="flightType" style={{ backgroundColor: "white" }}>
           <Switch>
             <Route exact path="/" component={Landing} />
-            <Route path="/login" component={LoginForm} />
+            {/* <Route path="/login" component={LoginForm} />
             <Route path="/signup" component={SignupForm} />
             <Route path="/user" component={Users} />
             <Route path="/flight/:id" component={FlightDetails} />
-            <Route path="/createflight" component={FlightForm} />
+            <Route path="/createflight" component={FlightForm} /> */}
+            <PublicOnlyRoute
+              path={'/signup'}
+              component={SignupForm}
+            />
+            <PublicOnlyRoute
+              path={'/login'}
+              component={LoginForm}
+            />
+            <PrivateRoute
+              path={'/user'}
+              component={Users}
+            />
+            <PrivateRoute
+              path={'/createflight'}
+              component={FlightForm}
+            />
+            <PrivateRoute
+              path={'/flight/:id'}
+              component={FlightDetails}
+            />
           </Switch>
         </div>
       </ApiContext.Provider>

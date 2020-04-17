@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import AuthApiService from '../../Services/auth-api-service'
+
 import './SignupForm.css'
 
 
@@ -20,7 +21,9 @@ export default class SignupForm extends Component {
         if (password.value !== confirmPassword.value) {
             console.log(password, confirmPassword)
             alert("Passwords don't match!")
+            return false 
         }
+        
 
         //posts information to server as a new user
 
@@ -59,7 +62,7 @@ export default class SignupForm extends Component {
                     </header>
                     <div className='formSection'>
                         <label htmlFor='SignupForm__uname' style={{ textAlign: "left" }}>
-                            Name
+                            Name 
                         </label>
                         <input
                             name='name'
@@ -72,7 +75,7 @@ export default class SignupForm extends Component {
                     </div>
                     <div className='formSection'>
                         <label htmlFor='SignupForm__username' style={{ textAlign: "left" }}>
-                            Username
+                            Username 
                         </label>
                         <input
                             name='username'
@@ -85,7 +88,7 @@ export default class SignupForm extends Component {
                     </div>
                     <div className='formSection'>
                         <label htmlFor='SignupForm__password' style={{ textAlign: "left" }}>
-                            Password
+                            Password 
                         </label>
                         <input
                             name='password'
@@ -99,7 +102,7 @@ export default class SignupForm extends Component {
                     </div>
                     <div className='formSection'>
                         <label htmlFor='SignupForm__confirmPassword' style={{ textAlign: "left" }}>
-                            Confirm Password
+                            Confirm Password 
                              </label>
                         <input
                             name='confirmPassword'
@@ -112,7 +115,7 @@ export default class SignupForm extends Component {
                     </div>
                     <div className='formSection'>
                         <label htmlFor='SignupForm__email' style={{ textAlign: "left" }}>
-                            Email
+                            Email 
                             </label>
                         <input
                             name='email'
