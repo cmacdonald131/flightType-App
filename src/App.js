@@ -105,11 +105,6 @@ class App extends Component {
         <div className="flightType" style={{ backgroundColor: "white" }}>
           <Switch>
             <Route exact path="/" component={Landing} />
-            {/* <Route path="/login" component={LoginForm} />
-            <Route path="/signup" component={SignupForm} />
-            <Route path="/user" component={Users} />
-            <Route path="/flight/:id" component={FlightDetails} />
-            <Route path="/createflight" component={FlightForm} /> */}
             <PublicOnlyRoute
               path={'/signup'}
               component={SignupForm}

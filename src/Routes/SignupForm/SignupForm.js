@@ -19,7 +19,6 @@ export default class SignupForm extends Component {
         //confirms that the user input the correct password
 
         if (password.value !== confirmPassword.value) {
-            console.log(password, confirmPassword)
             alert("Passwords don't match!")
             return false 
         }
@@ -40,7 +39,6 @@ export default class SignupForm extends Component {
                 username.value = ''
                 password.value = ''
                 confirmPassword.value = ''
-                console.log(this.props.history.push('/login'))
                 this.props.onRegistrationSuccess()
             })
             .catch(res => {
@@ -96,7 +94,7 @@ export default class SignupForm extends Component {
                             placeholder='Enter your Password'
                             required
                             id='SignupForm__password'
-                            onClick={e => alert('Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character.')}
+                            onClickCapture={e => alert('Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character.')}
                         >
                         </input>
                     </div>

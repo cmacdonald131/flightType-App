@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+
 import Navbar from '../../Components/Navbar/Navbar'
 import './Landing.css'
 
@@ -37,7 +37,7 @@ export default class Landing extends Component {
                         </ul>
                         <p>Once logged in, check out what we have to offer. We know you'll like what you see!</p>
                     </section>
-                    <div style={{ textAlign: "center", color: "white" }}>Interested?  <Link to="/signup">Sign up here.</Link>  It will only take a second.</div>
+                    {/* <div style={{ textAlign: "center", color: "black" }}>Interested?  Sign up and get started.  It will only take a second.</div> */}
                 </div>
             </div>
         );
