@@ -21,8 +21,8 @@ class Navbar extends Component {
         if (this.context.user) {
             menus = (
                 <div id="myLinks">
-                    <Link to="/user" className="navLink">Home</Link>
-                    <Link to='/' onClick={this.logout} className="navLink">Logout</Link>
+                    <Link to="/user" className="navLink" aria-label="Home Page">Home</Link>
+                    <Link to='/' onClick={this.logout} className="navLink" aria-label="Logout">Logout</Link>
                 </div>
             )
         }
@@ -30,8 +30,8 @@ class Navbar extends Component {
         else {
             menus = (
                 <div id="myLinks">
-                    <Link to="/login" className="navLink">Login</Link>
-                    <Link to="/signup" className="navLink">Signup</Link>
+                    <Link to="/login" className="navLink" aria-label="Login">Login</Link>
+                    <Link to="/signup" className="navLink"aria-label="Signup">Signup</Link>
                 </div>
             )
         }
@@ -39,7 +39,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <nav className="nav">
-                    <a href="/" className="active">FT</a>
+                    <a href="/" className="active" aria-label="Landing Page">FT</a>
                     {menus}
                 </nav>
             </div>

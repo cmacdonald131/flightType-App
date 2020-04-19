@@ -3,7 +3,7 @@
 }
 
 .Landing {
-  background: url(../../Images/wing.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Images/wing.jpg);
   background-position: center center;
   background-size: cover;
   color: #ffffff;
@@ -27,14 +27,18 @@
 
 @media screen and (min-width: 700px) {
   .Landing {
-    background: url(../../Images/flight.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/flight.jpg);
     background-position: center center;
     background-size: cover;
-    color: black;
+    color: #ffffff;
     height: 130vh;
   }
 
   .Card {
     font-size: 24px;
+  }
+
+  h1 {
+    font-size: 45px;
   }
 }

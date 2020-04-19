@@ -24,6 +24,7 @@ class Users extends Component {
                         className='create_flight'
                         type='button'
                         onClick={e => this.props.history.push('/createflight')}
+                        aria-label="Create your flight"
                     >Create your flight
                     </button>
 

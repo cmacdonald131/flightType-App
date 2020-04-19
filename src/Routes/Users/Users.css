@@ -3,7 +3,7 @@
 }
 
 .UserPage {
-  background: url(../../Images/wing.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/wing.jpg);
   background-position: center center;
   background-size: cover;
   color: #ffffff;
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 700px) {
     .UserPage {
-      background: url(../../Images/flight.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../Images/flight.jpg);
       background-position: center center;
       background-size: cover;
       color: #ffffff;

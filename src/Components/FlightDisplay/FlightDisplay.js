@@ -11,7 +11,7 @@ export default class FlightDisplay extends Component {
         return (
             <div>
                 <section className="searchResults">
-                    <h1>Your Flights</h1>
+                    <h2>Your Flights</h2>
                     {this.context.flights.map(flights => (
                         <ul key={flights.id}>
                             <li>

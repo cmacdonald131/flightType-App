@@ -58,6 +58,7 @@ export default class LoginForm extends Component {
                                 name='username'
                                 placeholder='Enter Username'
                                 id='LoginForm__username'
+                                aria-label="Enter your username"
                             >
                             </input>
                         </div>
@@ -71,12 +72,14 @@ export default class LoginForm extends Component {
                                 type='password'
                                 placeholder='Enter Password'
                                 id='LoginForm__password'
+                                aria-label="Enter your password"
                             >
                             </input>
                         </div>
                         <button
                             className="submit"
                             type='submit'
+                            aria-label="Login"
                         >Login
                         </button>
                     </section>

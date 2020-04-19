@@ -55,7 +55,7 @@ export default class FlightForm extends Component {
                 <form onSubmit={this.onSubmit} className="add-flight">
                     <section className="aircraft">
                         <h1 style={{ textAlign: "center", fontSize: "30px" }}>Create your flight</h1>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Flight Name</label>
+                        <label htmlFor="FlightName" style={{ textAlign: "left" }}>Flight Name</label>
                         <input
                             className='search-box'
                             name='name'
@@ -63,9 +63,10 @@ export default class FlightForm extends Component {
                             placeholder='Input flight name'
                             required
                             id='FlightForm'
+                            aria-label="Name your flight"
                         >
                         </input>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Departure Airport</label>
+                        <label htmlFor="DepartureAirport" style={{ textAlign: "left" }}>Departure Airport</label>
                         <input
                             className='search-box'
                             name='departure_airport'
@@ -73,9 +74,10 @@ export default class FlightForm extends Component {
                             placeholder='Input departure airport'
                             required
                             id='FlightForm'
+                            aria-label="Departure airport"
                         >
                         </input>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Arrival Airport</label>
+                        <label htmlFor="ArrivalAirport" style={{ textAlign: "left" }}>Arrival Airport</label>
                         <input
                             className='search-box'
                             name='arrival_airport'
@@ -83,9 +85,10 @@ export default class FlightForm extends Component {
                             placeholder='Input arrival airport'
                             required
                             id='FlightForm'
+                            aria-label="Arrival airport"
                         >
                         </input>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Airline</label>
+                        <label htmlFor="Airline" style={{ textAlign: "left" }}>Airline</label>
                         <input
                             className='search-box'
                             name='company'
@@ -93,9 +96,10 @@ export default class FlightForm extends Component {
                             placeholder='Input airline company'
                             required
                             id='FlightForm'
+                            aria-label="Airline company"
                         >
                         </input>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Arrival Time</label>
+                        <label htmlFor="ArrivalTime" style={{ textAlign: "left" }}>Arrival Time</label>
                         <input
                             className='search-box'
                             name='arrival_time'
@@ -103,9 +107,10 @@ export default class FlightForm extends Component {
                             placeholder='Input arrival time'
                             required
                             id='FlightForm'
+                            aria-label="Arrival time"
                         >
                         </input>
-                        <label htmlFor="FlightForm" style={{ textAlign: "left" }}>Departure Time</label>
+                        <label htmlFor="DepartureTime" style={{ textAlign: "left" }}>Departure Time</label>
                         <input
                             className='search-box'
                             name='departure_time'
@@ -113,11 +118,12 @@ export default class FlightForm extends Component {
                             placeholder='Input departure time'
                             required
                             id='FlightForm'
+                            aria-label="Departure time"
                         >
                         </input>
-                        <button >Create Flight</button>
-                        <button type="reset" className="reset">Reset</button>
-                        <button onClick={this.onCancel} type="cancel" className="cancel">Cancel</button>
+                        <button aria-label="Create flight">Create Flight</button>
+                        <button type="reset" className="reset" aria-label="Reset">Reset</button>
+                        <button onClick={this.onCancel} type="cancel" className="cancel" aria-label="Cancel">Cancel</button>
                     </section>
                 </form>
             </div>

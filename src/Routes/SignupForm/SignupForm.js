@@ -23,7 +23,6 @@ export default class SignupForm extends Component {
             return false 
         }
         
-
         //posts information to server as a new user
 
         this.setState({ error: null })
@@ -68,6 +67,7 @@ export default class SignupForm extends Component {
                             placeholder='Enter your Name'
                             required
                             id='SignupForm__name'
+                            aria-label="Enter your name"
                         >
                         </input>
                     </div>
@@ -81,6 +81,7 @@ export default class SignupForm extends Component {
                             placeholder='Enter your Username'
                             required
                             id='SignupForm__username'
+                            aria-label="Enter your username"
                         >
                         </input>
                     </div>
@@ -94,7 +95,7 @@ export default class SignupForm extends Component {
                             placeholder='Enter your Password'
                             required
                             id='SignupForm__password'
-                            onClickCapture={e => alert('Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character.')}
+                            aria-label="Enter your password"
                         >
                         </input>
                     </div>
@@ -108,6 +109,7 @@ export default class SignupForm extends Component {
                             placeholder='Confirm your Password'
                             required
                             id='SignupForm__confirmPassword'
+                            aria-label="Confirm your password"
                         >
                         </input>
                     </div>
@@ -117,14 +119,15 @@ export default class SignupForm extends Component {
                             </label>
                         <input
                             name='email'
-                            type='text'
+                            type='email'
                             placeholder='Enter your email'
                             required
                             id='SignupForm__email'
+                            aria-label="Enter your email"
                         >
                         </input>
                     </div>
-                    <button type='submit' className="btn" style={{ textAlign: "center" }}>
+                    <button type='submit' className="btn" style={{ textAlign: "center" }} aria-label="Register">
                         Register
                         </button>
                 </form>

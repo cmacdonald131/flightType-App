@@ -72,7 +72,6 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
       <input
         id="SignupForm__password"
         name="password"
-        onClick={[Function]}
         placeholder="Enter your Password"
         required={true}
         type="password"
@@ -117,7 +116,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         name="email"
         placeholder="Enter your email"
         required={true}
-        type="text"
+        type="email"
       />
     </div>
     <button
@@ -207,7 +206,6 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
       <input
         id="SignupForm__password"
         name="password"
-        onClick={[Function]}
         placeholder="Enter your Password"
         required={true}
         type="password"
@@ -252,7 +250,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         name="email"
         placeholder="Enter your email"
         required={true}
-        type="text"
+        type="email"
       />
     </div>
     <button
