@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 import Users from './Users';
 
 
 it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <BrowserRouter>
+            <MemoryRouter>
                 <Users />
-            </BrowserRouter>,
+            </MemoryRouter>,
             div
         )
         ReactDOM.unmountComponentAtNode(div)
