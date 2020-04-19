@@ -7,6 +7,9 @@ import Navbar from '../Navbar/Navbar'
 export default class FlightDetails extends Component {
     static contextType = ApiContext
 
+    componentDidMount() {
+        this.context.getFlights()
+    }
 
     render() {
         const flight = this.context.flights.find(f => f.id === parseInt(this.props.match.params.id)) || {}

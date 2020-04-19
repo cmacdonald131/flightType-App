@@ -96,6 +96,7 @@ export default class SignupForm extends Component {
                             required
                             id='SignupForm__password'
                             aria-label="Enter your password"
+                            //onMouseOver={e => alert.show(`<div>Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character</div>`)}
                         >
                         </input>
                     </div>
@@ -131,6 +132,9 @@ export default class SignupForm extends Component {
                         Register
                         </button>
                 </form>
+                <section className="Requirements">
+                    <p>Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character</p>
+                </section>
             </div>
         )
     }

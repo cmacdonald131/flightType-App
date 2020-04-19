@@ -15,9 +15,9 @@ export default class FlightDisplay extends Component {
                     {this.context.flights.map(flights => (
                         <ul key={flights.id}>
                             <li>
-                                <p style={{textAlign: "center"}}>{flights.name}</p>
+                                <p style={{ textAlign: "center" }}>{flights.name}</p>
                                 <Link to={'/flight/' + flights.id}>
-                                    <button type='button' style={{textAlign: "center"}}>
+                                    <button type='button' style={{ textAlign: "center" }}>
                                         Flight Details
                                 </button>
                                 </Link>

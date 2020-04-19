@@ -28,6 +28,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         Name
       </label>
       <input
+        aria-label="Enter your name"
         id="SignupForm__name"
         name="name"
         placeholder="Enter your Name"
@@ -49,6 +50,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         Username
       </label>
       <input
+        aria-label="Enter your username"
         id="SignupForm__username"
         name="username"
         placeholder="Enter your Username"
@@ -70,6 +72,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         Password
       </label>
       <input
+        aria-label="Enter your password"
         id="SignupForm__password"
         name="password"
         placeholder="Enter your Password"
@@ -91,6 +94,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         Confirm Password
       </label>
       <input
+        aria-label="Confirm your password"
         id="SignupForm__confirmPassword"
         name="confirmPassword"
         placeholder="Confirm your Password"
@@ -112,6 +116,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
         Email
       </label>
       <input
+        aria-label="Enter your email"
         id="SignupForm__email"
         name="email"
         placeholder="Enter your email"
@@ -120,6 +125,7 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
       />
     </div>
     <button
+      aria-label="Register"
       className="btn"
       style={
         Object {
@@ -131,6 +137,13 @@ exports[`SignupForm component renders a form.SignupForm by default 1`] = `
       Register
     </button>
   </form>
+  <section
+    className="Requirements"
+  >
+    <p>
+      Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character
+    </p>
+  </section>
 </div>
 `;
 
@@ -162,6 +175,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         Name
       </label>
       <input
+        aria-label="Enter your name"
         id="SignupForm__name"
         name="name"
         placeholder="Enter your Name"
@@ -183,6 +197,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         Username
       </label>
       <input
+        aria-label="Enter your username"
         id="SignupForm__username"
         name="username"
         placeholder="Enter your Username"
@@ -204,6 +219,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         Password
       </label>
       <input
+        aria-label="Enter your password"
         id="SignupForm__password"
         name="password"
         placeholder="Enter your Password"
@@ -225,6 +241,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         Confirm Password
       </label>
       <input
+        aria-label="Confirm your password"
         id="SignupForm__confirmPassword"
         name="confirmPassword"
         placeholder="Confirm your Password"
@@ -246,6 +263,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
         Email
       </label>
       <input
+        aria-label="Enter your email"
         id="SignupForm__email"
         name="email"
         placeholder="Enter your email"
@@ -254,6 +272,7 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
       />
     </div>
     <button
+      aria-label="Register"
       className="btn"
       style={
         Object {
@@ -265,5 +284,12 @@ exports[`SignupForm component renders the SignupForm given props 1`] = `
       Register
     </button>
   </form>
+  <section
+    className="Requirements"
+  >
+    <p>
+      Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character
+    </p>
+  </section>
 </div>
 `;

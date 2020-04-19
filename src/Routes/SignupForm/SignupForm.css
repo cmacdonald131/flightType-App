@@ -14,6 +14,18 @@
   text-align: center;
 }
 
+.Requirements {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  width: 80%;
+}
+
 input,
 label {
   display: block;
@@ -58,5 +70,9 @@ input::placeholder {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .Requirements {
+    width: 48%;
   }
 }
