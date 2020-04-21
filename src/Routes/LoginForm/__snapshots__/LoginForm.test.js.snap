@@ -43,6 +43,7 @@ exports[`LoginForm component renders a form.LoginForm by default 1`] = `
           Username
         </label>
         <input
+          aria-label="Enter your username"
           id="LoginForm__username"
           name="username"
           placeholder="Enter Username"
@@ -69,6 +70,7 @@ exports[`LoginForm component renders a form.LoginForm by default 1`] = `
           Password
         </label>
         <input
+          aria-label="Enter your password"
           id="LoginForm__password"
           name="password"
           placeholder="Enter Password"
@@ -77,6 +79,7 @@ exports[`LoginForm component renders a form.LoginForm by default 1`] = `
         />
       </div>
       <button
+        aria-label="Login"
         className="submit"
         type="submit"
       >
@@ -130,6 +133,7 @@ exports[`LoginForm component renders the LoginForm given props 1`] = `
           Username
         </label>
         <input
+          aria-label="Enter your username"
           id="LoginForm__username"
           name="username"
           placeholder="Enter Username"
@@ -156,6 +160,7 @@ exports[`LoginForm component renders the LoginForm given props 1`] = `
           Password
         </label>
         <input
+          aria-label="Enter your password"
           id="LoginForm__password"
           name="password"
           placeholder="Enter Password"
@@ -164,6 +169,7 @@ exports[`LoginForm component renders the LoginForm given props 1`] = `
         />
       </div>
       <button
+        aria-label="Login"
         className="submit"
         type="submit"
       >

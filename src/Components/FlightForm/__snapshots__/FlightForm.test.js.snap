@@ -23,7 +23,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Create your flight
       </h1>
       <label
-        htmlFor="FlightForm"
+        htmlFor="FlightName"
         style={
           Object {
             "textAlign": "left",
@@ -33,6 +33,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Flight Name
       </label>
       <input
+        aria-label="Name your flight"
         className="search-box"
         id="FlightForm"
         name="name"
@@ -41,7 +42,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="DepartureAirport"
         style={
           Object {
             "textAlign": "left",
@@ -51,6 +52,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Departure Airport
       </label>
       <input
+        aria-label="Departure airport"
         className="search-box"
         id="FlightForm"
         name="departure_airport"
@@ -59,7 +61,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="ArrivalAirport"
         style={
           Object {
             "textAlign": "left",
@@ -69,6 +71,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Arrival Airport
       </label>
       <input
+        aria-label="Arrival airport"
         className="search-box"
         id="FlightForm"
         name="arrival_airport"
@@ -77,7 +80,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="Airline"
         style={
           Object {
             "textAlign": "left",
@@ -87,6 +90,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Airline
       </label>
       <input
+        aria-label="Airline company"
         className="search-box"
         id="FlightForm"
         name="company"
@@ -95,7 +99,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="ArrivalTime"
         style={
           Object {
             "textAlign": "left",
@@ -105,6 +109,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Arrival Time
       </label>
       <input
+        aria-label="Arrival time"
         className="search-box"
         id="FlightForm"
         name="arrival_time"
@@ -113,7 +118,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         type="time"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="DepartureTime"
         style={
           Object {
             "textAlign": "left",
@@ -123,6 +128,7 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         Departure Time
       </label>
       <input
+        aria-label="Departure time"
         className="search-box"
         id="FlightForm"
         name="departure_time"
@@ -130,16 +136,20 @@ exports[`FlightForm component renders a form.FlightForm by default 1`] = `
         required={true}
         type="time"
       />
-      <button>
+      <button
+        aria-label="Create flight"
+      >
         Create Flight
       </button>
       <button
+        aria-label="Reset"
         className="reset"
         type="reset"
       >
         Reset
       </button>
       <button
+        aria-label="Cancel"
         className="cancel"
         onClick={[Function]}
         type="cancel"
@@ -174,7 +184,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Create your flight
       </h1>
       <label
-        htmlFor="FlightForm"
+        htmlFor="FlightName"
         style={
           Object {
             "textAlign": "left",
@@ -184,6 +194,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Flight Name
       </label>
       <input
+        aria-label="Name your flight"
         className="search-box"
         id="FlightForm"
         name="name"
@@ -192,7 +203,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="DepartureAirport"
         style={
           Object {
             "textAlign": "left",
@@ -202,6 +213,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Departure Airport
       </label>
       <input
+        aria-label="Departure airport"
         className="search-box"
         id="FlightForm"
         name="departure_airport"
@@ -210,7 +222,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="ArrivalAirport"
         style={
           Object {
             "textAlign": "left",
@@ -220,6 +232,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Arrival Airport
       </label>
       <input
+        aria-label="Arrival airport"
         className="search-box"
         id="FlightForm"
         name="arrival_airport"
@@ -228,7 +241,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="Airline"
         style={
           Object {
             "textAlign": "left",
@@ -238,6 +251,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Airline
       </label>
       <input
+        aria-label="Airline company"
         className="search-box"
         id="FlightForm"
         name="company"
@@ -246,7 +260,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         type="text"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="ArrivalTime"
         style={
           Object {
             "textAlign": "left",
@@ -256,6 +270,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Arrival Time
       </label>
       <input
+        aria-label="Arrival time"
         className="search-box"
         id="FlightForm"
         name="arrival_time"
@@ -264,7 +279,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         type="time"
       />
       <label
-        htmlFor="FlightForm"
+        htmlFor="DepartureTime"
         style={
           Object {
             "textAlign": "left",
@@ -274,6 +289,7 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         Departure Time
       </label>
       <input
+        aria-label="Departure time"
         className="search-box"
         id="FlightForm"
         name="departure_time"
@@ -281,16 +297,20 @@ exports[`FlightForm component renders the FlightForm given props 1`] = `
         required={true}
         type="time"
       />
-      <button>
+      <button
+        aria-label="Create flight"
+      >
         Create Flight
       </button>
       <button
+        aria-label="Reset"
         className="reset"
         type="reset"
       >
         Reset
       </button>
       <button
+        aria-label="Cancel"
         className="cancel"
         onClick={[Function]}
         type="cancel"
